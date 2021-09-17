@@ -6,7 +6,7 @@ catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
 }
-$recupMessages = $bdd->query('SELECT * FROM messages');
+$recupMessages = $bdd->query('SELECT * FROM messages ORDER BY ID DESC');
 while($message = $recupMessages->fetch()){
     ?>
     <div class="message">

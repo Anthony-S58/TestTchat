@@ -35,15 +35,15 @@ if(isset($_POST['valider'])){
 </head>
 <body>
     <h1>Test</h1><br>
+    <section id="messages"></section>
 
     <form method="POST" action="">
         <input type="text" name="pseudo" placeholder="Pseudo">
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+        <textarea name="message" id="text" cols="30" rows="10" placeholder="Votre message..."></textarea>
         <input type="submit" name="valider">
     </form>
-<section id="messages"></section>
     <script>
-        setInterval('load_messages()', 1000);
+        setInterval('load_messages()', 500);
         function load_messages(){
             $('#messages').load('loadMessages.php');
         }

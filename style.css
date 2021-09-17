@@ -16,12 +16,23 @@ h1{
 }
 textarea{
     resize: none;
+    
 }
 form{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    flex-direction: column; 
+    flex-direction: row; 
     margin-top: 30px; 
-    width: 320px;
+    width: auto;
+    margin: 20px;
+    position: fixed;
+}
+input{
+    width:100px;
+    height: 30px;
+}
+#text{
+    width:400px;
+    height: 30px;
 }
